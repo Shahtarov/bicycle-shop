@@ -1,0 +1,8 @@
+.header__container {
+	width: clamp(265px, 83vw, 1200px);
+	height: 74px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	box-sizing: border-box;
+}

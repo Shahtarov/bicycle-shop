@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+.switch__input {
+	width: 0;
+	height: 0;
+	opacity: 0;
+
+	&:checked + .switch__slider {
+		background-color: #545454;
+	}
+
+	&:checked + .switch__slider:before {
+		background-color: $buttin-color;
+		transform: translateX(20px);
+	}
+
+	&:hover + .switch__slider:before {
+		background-color: $button-color-hover;
+	}
+}

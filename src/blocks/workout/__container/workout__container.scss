@@ -1,0 +1,10 @@
+.workout__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@media screen and (max-width: 880px) {
+		justify-content: center;
+		gap: 40px;
+	}
+}

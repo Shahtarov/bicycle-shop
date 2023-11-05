@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+.burger-menu__line {
+	margin: 0;
+	background-color: $text-color-light;
+	border: none;
+	width: 22px;
+	height: 3px;
+}

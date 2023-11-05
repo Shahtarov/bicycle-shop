@@ -1,0 +1,15 @@
+.intro__sticky {
+	@media screen and (max-width: 880px) {
+		height: clamp(348px, 65vw, 655px);
+		// height: clamp(348px, 75vw, 655px);
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: flex-start;
+		align-content: flex-start;
+	}
+
+	@media screen and (max-width: 426px) {
+		height: clamp(348px, 75vw, 655px);
+	}
+}

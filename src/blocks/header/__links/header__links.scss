@@ -1,0 +1,12 @@
+.header__links {
+	display: flex;
+	gap: 34px;
+
+	// @media screen and (max-width: 1230px) {
+	// 	padding-right: 20px;
+	// }
+
+	@media screen and (max-width: 769px) {
+		display: none;
+	}
+}

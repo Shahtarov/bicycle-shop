@@ -1,0 +1,8 @@
+.footer__switch-container {
+	display: flex;
+	align-items: flex-end;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+}

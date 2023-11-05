@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+.quote__title {
+	margin: 0;
+	max-width: 470px;
+	display: inline-block;
+	color: $text-color-light;
+	font-family: $font-family;
+	font-style: normal;
+	line-height: clamp(29px, 4vw, 44px);
+	letter-spacing: -0.5px;
+	font-weight: 600;
+	font-size: clamp(23px, 3vw, 34px);
+
+	@media screen and (max-width: 880px) {
+		max-width: 100%;
+		// width: 100%;
+	}
+}

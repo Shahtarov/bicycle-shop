@@ -1,0 +1,5 @@
+@use 'mixins';
+
+.text-description {
+	@include mixins.text-description('medium');
+}

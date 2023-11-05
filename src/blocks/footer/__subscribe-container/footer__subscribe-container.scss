@@ -1,0 +1,8 @@
+.footer__subscribe-container {
+	// width: clamp(284px, 30vw, 360px);
+	display: flex;
+	flex-direction: column;
+	// gap: clamp(99px, 30vw, 111px);
+	align-items: flex-start;
+	gap: clamp(77px, 30vw, 82px);
+}

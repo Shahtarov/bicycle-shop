@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+.quote__name {
+	margin: 0;
+	color: $text-color-light;
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 500;
+	line-height: clamp(22px, 5vw, 32px);
+	font-size: clamp(14px, 4vw, 20px);
+}

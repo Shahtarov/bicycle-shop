@@ -1,0 +1,12 @@
+.reviews-gallery__image {
+	width: 285px;
+	height: 500px;
+	border-radius: 33px;
+	object-fit: cover;
+	object-position: top center;
+
+	@media screen and (max-width: 479px) {
+		width: 180px;
+		height: 316px;
+	}
+}

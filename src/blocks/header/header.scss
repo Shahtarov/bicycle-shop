@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+.header {
+	// margin: 0 auto;
+	margin-right: clamp(18px, 5vw, 120px);
+	margin-left: clamp(18px, 5vw, 120px);
+
+	width: 100%;
+	position: sticky;
+	top: 0;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	background-color: $background-color;
+	z-index: 10;
+
+	// @media screen and (max-width: 1440px) {
+	// 	margin-left: 120px;
+	// }
+
+	// @media screen and (max-width: 980px) {
+	// 	padding: 0 20px;
+	// }
+}

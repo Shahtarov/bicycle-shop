@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@mixin link {
+	margin: 0;
+	display: inline-block;
+	color: $text-color-light;
+	font-family: $font-family;
+	font-size: clamp(14px, 4vw, 18px);
+	font-style: normal;
+	font-weight: 600;
+	line-height: clamp(20px, 3vw, 28px); /* 155.556% */
+	text-decoration: none;
+
+	&:hover {
+		opacity: 0.75;
+		transition: opacity ease-in-out 0.35s;
+		cursor: pointer;
+	}
+}

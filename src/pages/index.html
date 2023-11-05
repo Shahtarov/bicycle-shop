@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="<%=require('../images/favicon.ico')%>" rel="icon" />
+		<title>Магазин велосипедов</title>
+		<meta name="description" content="Магазин велосипедов для разных целей" />
+		<meta property="og:title" content="Магазин велосипедов" />
+		<meta
+			property="og:description"
+			content="Магазин велосипедов для разных целей"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Bicycle shop" />
+		<meta property="og:locale" content="ru_RU" />
+		<!-- <meta property="og:url" content="https://easydoo.ru/"> -->
+	</head>
+
+	<body class="page">
+		<header class="header">
+			<div class="header__container">
+				<nav class="header__links">
+					<a class="header__link" href="#road-surface">Покрытия и градиенты</a>
+					<a class="header__link" href="#catalog">Велосипеды</a>
+					<a class="header__link" href="#workout">Тренировки</a>
+				</nav>
+				<button class="burger-menu" type="button" title="Открыть меню">
+					<hr class="burger-menu__line" />
+					<hr class="burger-menu__line" />
+					<hr class="burger-menu__line" />
+				</button>
+			</div>
+		</header>
+
+		<div class="header-mobile">
+			<div class="header-mobile__right-menu">
+				<div class="header-mobile__close-icon"></div>
+				<div class="header-mobile__container">
+					<nav class="header-mobile__links">
+						<a class="header__link" href="#road-surface"
+							>Покрытия и градиенты</a
+						>
+						<a class="header__link" href="#catalog">Велосипеды</a>
+						<a class="header__link" href="#workout">Тренировки</a>
+					</nav>
+					<div class="switch">
+						<div class="switch__image switch__image_type_sun"></div>
+						<label class="switch__label">
+							<input class="switch__input" type="checkbox" title="switch" />
+							<span class="switch__slider"></span>
+						</label>
+						<div class="switch__image switch__image_type_moon"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="intro">
+			<div class="intro__container">
+				<div class="intro__content">
+					<h1 class="intro__title title title_theme_light title_size_big">
+						Шоссе, ТТ и&nbsp;Грэвел
+					</h1>
+					<p class="text-description">
+						Триатлонные старты, горные серпантины или грейвел заезды по
+						живописным маршрутам – нужно только определиться с выбором
+						велосипеда и отправиться в путь.
+					</p>
+					<a class="button" href="#">Подробнее</a>
+				</div>
+
+				<div class="intro__caption">
+					<p class="intro__caption-text">Cannondale Systemsix</p>
+					<hr class="intro__caption-line" />
+				</div>
+			</div>
+			<div class="intro__image"></div>
+		</section>
+
+		<section class="quote">
+			<img
+				class="quote__image"
+				src="<%=require('../images/road.png')%>"
+				alt="Пейзаж с дорогой"
+			/>
+			<div class="quote__container">
+				<h2 class="quote__title">
+					«Катайся много или мало, долго или коротко, как хочешь - но катайся»
+				</h2>
+				<div class="quote__person">
+					<p class="quote__name">Эдди Меркс</p>
+					<p class="quote__job">Велогонщик</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="workout">
+			<div class="workout__container">
+				<div class="workout__description">
+					<h2 class="workout__title title title_theme_light title_size_big">
+						Тренировки
+					</h2>
+					<p class="text-description">
+						Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+						Komoot, а записать эти тренировки поможет приложение Strava, а также
+						это приложение позволит построить тренировочный план.
+					</p>
+				</div>
+				<div class="workout__links">
+					<a class="link" href="https://www.komoot.com">Strava</a>
+					<a class="link" href="https://www.strava.com">Komoot</a>
+				</div>
+			</div>
+			<img
+				class="workout__image"
+				src="<%=require('../images/road2.png')%>"
+				alt="Пейзаж с дорогой"
+			/>
+		</section>
+
+		<footer class="footer">
+			<!-- <div class="footer__subscribe-container"> -->
+			<form class="form-subscribe" name="form-subscribe" novalidate>
+				<h2 class="footer__title title title_size_small title_theme_light">
+					Подпишитесь на рассылку —
+				</h2>
+				<div class="form-subscribe__container">
+					<input
+						class="form-subscribe__input"
+						id="email"
+						name="email"
+						data-message="Укажите корректный email"
+						type="email"
+						placeholder="Ваш e-mail"
+						required
+						tabindex="1"
+						minlength="5"
+						maxlength="50"
+					/>
+					<button class="form-subscribe__submit" type="submit" tabindex="2">
+						ok
+					</button>
+					<span class="form-subscribe__input-error"></span>
+				</div>
+			</form>
+			<!-- </div> -->
+			<div class="footer__bottom-container">
+				<p class="footer__copyright">© Road Club 2023</p>
+				<div class="switch switch_disabled">
+					<div class="switch__image switch__image_type_sun"></div>
+					<label class="switch__label">
+						<input class="switch__input" type="checkbox" title="switch" />
+						<span class="switch__slider"></span>
+					</label>
+					<div class="switch__image switch__image_type_moon"></div>
+				</div>
+				<img
+					class="logo"
+					src="<%=require('../images/logo.svg')%>"
+					alt="Логотип"
+				/>
+			</div>
+
+			<!-- <div class="footer__switch-container">
+				
+			</div> -->
+		</footer>
+	</body>
+</html>

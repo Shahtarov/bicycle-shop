@@ -1,0 +1,12 @@
+@use 'variables' as *;
+
+.quote {
+	margin: $section-margin;
+	display: flex;
+	flex-direction: row;
+	gap: clamp(40px, 6vw, 80px);
+
+	@media screen and (max-width: 880px) {
+		flex-direction: column;
+	}
+}

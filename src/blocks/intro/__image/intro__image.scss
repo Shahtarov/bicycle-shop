@@ -1,0 +1,29 @@
+.intro__image {
+	width: clamp(234px, 56vw, 440px);
+	height: clamp(160px, 39vw, 300px);
+	position: sticky;
+	top: 400px;
+	background-color: #f4f4f4;
+	background-image: url('../../../images/bike-fixed.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	background-size: clamp(180px, 45vw, 340px) clamp(138px, 35vw, 260px);
+	border-radius: 20px;
+	filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
+
+	@media screen and (max-width: 880px) {
+		top: 90px;
+		// margin-top: clamp(40px, 12vw, 50px);
+		// &::before {
+		// 	position: static;
+		// 	width: 100%;
+		// 	height: clamp(348px, 75vw, 655px);
+		// 	top: 0;
+		// 	left: 0;
+		// 	display: block;
+		// 	content: "";
+		// 	background-color: rgba(255, 0, 0, 0.2);
+		// }
+	}
+}

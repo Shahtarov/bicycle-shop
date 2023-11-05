@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+.footer {
+	padding: $container-padding;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: clamp(77px, 30vw, 82px);
+	background-color: #efefef;
+
+	@media screen and (max-width: 426px) {
+		width: 82vw;
+	}
+
+	// 	margin: $section-margin;
+	// 	padding: 0 120px;
+	// 	min-height: 356px;
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	align-items: center;
+	// 	background-color: #EFEFEF;
+	// 	color: #fff;
+
+	// 	@media screen and (max-width: 1280px) {
+	// 		padding: 0 60px;
+	// 		flex-wrap: wrap;
+	// 		justify-content: center;
+	// 		row-gap: 30px;
+	// 	}
+}

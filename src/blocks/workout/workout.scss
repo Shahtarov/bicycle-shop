@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+.workout {
+	margin: $section-margin;
+	margin-bottom: clamp(60px, 15vw, 120px);
+	display: flex;
+	flex-direction: row;
+	gap: clamp(40px, 11vw, 160px);
+
+	@media screen and (max-width: 880px) {
+		flex-direction: column;
+	}
+}

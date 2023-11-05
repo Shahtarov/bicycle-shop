@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+.switch__slider {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #ccc;
+	border-radius: 100px;
+	transition: 0.4s;
+	cursor: pointer;
+
+	&:before {
+		position: absolute;
+		bottom: 2px;
+		height: calc(100% - 4px);
+		width: calc(50% - 2px);
+		left: 2px;
+		content: '';
+		background-color: $buttin-color;
+		border-radius: 100px;
+		transition: 0.4s, background-color 0.2s ease-in-out;
+	}
+}

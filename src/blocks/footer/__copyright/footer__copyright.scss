@@ -1,0 +1,12 @@
+@use 'variables' as *;
+
+.footer__copyright {
+	margin: 0;
+	display: inline-block;
+	color: #cfcfcf;
+	font-family: $font-family;
+	font-style: normal;
+	line-height: 19px;
+	font-weight: 600;
+	font-size: 14px;
+}

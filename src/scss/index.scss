@@ -1,0 +1,232 @@
+@use '../vendor/normalize.css';
+@use '../vendor/fonts.css';
+@use '../scss/_variables.scss';
+@use '../scss/mixins/_index.scss';
+
+// pages
+@use '../blocks/page/page.scss';
+
+// common
+@use '../blocks/common/title/title.scss';
+@use '../blocks/common/title/_size/title_size_big.scss';
+@use '../blocks/common/title/_size/title_size_small.scss';
+@use '../blocks/common/title/_them/title_theme_dark.scss';
+@use '../blocks/common/title/_them/title_theme_light.scss';
+@use '../blocks/common/text-description/text-description.scss';
+@use '../blocks/common/button/button.scss';
+@use '../blocks/common/link/link.scss';
+
+// header
+@use '../blocks/header/header.scss';
+@use '../blocks/header/__container/header__container.scss';
+@use '../blocks/header/__links/header__links.scss';
+@use '../blocks/header/__link/header__link.scss';
+
+// mobile menu
+@use '../blocks/burger-menu/burger-menu.scss';
+@use '../blocks/burger-menu/_close/burger-menu_close.scss';
+@use '../blocks/burger-menu/__line/burger-menu__line.scss';
+@use '../blocks/header-mobile/header-mobile.scss';
+@use '../blocks/header-mobile/_opened/header-menu_opened.scss';
+@use '../blocks/header-mobile/__right-menu/header-mobile__right-menu.scss';
+@use '../blocks/header-mobile/__close-icon/header-mobile__close-icon.scss';
+@use '../blocks/header-mobile/__container/header-mobile__container.scss';
+@use '../blocks/header-mobile/__links/header-mobile__links.scss';
+@use '../blocks/header-mobile/__link/header-mobile__link.scss';
+
+// switch
+@use '../blocks/switch/switch.scss';
+@use '../blocks/switch/_disabled/switch_disabled.scss';
+@use '../blocks/switch/__label/switch__label.scss';
+@use '../blocks/switch/__input/switch__input.scss';
+@use '../blocks/switch/__slider/switch__slider.scss';
+@use '../blocks/switch/__image/switch__image.scss';
+@use '../blocks/switch/__image/_type/switch__image_type_sun.scss';
+@use '../blocks/switch/__image/_type/switch__image_type_moon.scss';
+
+// section 'intro'
+@use '../blocks/intro/intro.scss';
+@use '../blocks/intro/__container/intro__container.scss';
+@use '../blocks/intro/__content/intro__content.scss';
+@use '../blocks/intro/__title/intro__title.scss';
+@use '../blocks/intro/__sticky/intro__sticky.scss';
+@use '../blocks/intro/__image/intro__image.scss';
+@use '../blocks/intro/__caption/intro__caption.scss';
+@use '../blocks/intro/__caption-text/intro__caption-text.scss';
+@use '../blocks/intro/__caption-line/intro__caption-line.scss';
+
+// section 'quote'
+@use '../blocks/quote/quote.scss';
+@use '../blocks/quote/__image/quote__image.scss';
+@use '../blocks/quote/__container/quote__container.scss';
+@use '../blocks/quote/__title/quote__title.scss';
+@use '../blocks/quote/__person/quote__person.scss';
+@use '../blocks/quote/__name/quote__name.scss';
+@use '../blocks/quote/__job/quote__job.scss';
+
+// section 'workout'
+@use '../blocks/workout/workout.scss';
+@use '../blocks/workout/__container/workout__container.scss';
+@use '../blocks/workout/__description/workout__description.scss';
+@use '../blocks/workout/__links/workout__links.scss';
+@use '../blocks/workout/__image/workout__image.scss';
+
+// section 'form'
+@use '../blocks/form-subscribe/form-subscribe.scss';
+@use '../blocks/form-subscribe/__container/form-subscribe__container.scss';
+@use '../blocks/form-subscribe/__input/form-subscribe__input.scss';
+@use '../blocks/form-subscribe/__input-error/form-subscribe__input-error.scss';
+@use '../blocks/form-subscribe/__submit/form-subscribe__submit.scss';
+
+// section 'footer'
+@use '../blocks/footer/footer.scss';
+@use '../blocks/footer/__subscribe-container/footer__subscribe-container.scss';
+@use '../blocks/footer/__title/footer__title.scss';
+@use '../blocks/footer/__bottom-container/footer__bottom-container.scss';
+@use '../blocks/footer/__switch-container/footer__switch-container.scss';
+@use '../blocks/footer/__copyright/footer__copyright.scss';
+
+// logo
+@use '../blocks/logo/logo.scss';
+
+// section 'advantage'
+// @use "../blocks/pros-block/pros-block.scss";
+// @use "../blocks/pros-block/__background/programm__background.scss";
+// @use "../blocks/pros-block/__block/pros-block__block.scss";
+// @use "../blocks/pros-block/__border/pros-block__border.scss";
+// @use "../blocks/pros-block/__pic/pros-block__pic.scss";
+// @use "../blocks/pros-block/__caption/pros-block__caption.scss";
+
+// section 'programm'
+// @use "../blocks/programm/programm.scss";
+// @use "../blocks/programm-block/programm-block.scss";
+// @use "../blocks/programm-block/__text-block/programm-block__text-block.scss";
+// @use "../blocks/programm-block/__item/programm-block__item.scss";
+// @use "../blocks/programm-block/__number/programm-block__number.scss";
+// @use "../blocks/programm-block/__text/programm-block__text.scss";
+// @use "../blocks/programm-block/__text/_font-weight/programm-block__text_bold.scss";
+// @use "../blocks/programm-block/__pic/programm-block__pic.scss";
+
+// section 'promo'
+// @use "../blocks/promo/promo.scss";
+// @use "../blocks/promo/__gift/promo__gift.scss";
+// @use "../blocks/promo/__pic/promo__pic.scss";
+// @use "../blocks/promo/__caption/promo__caption.scss";
+
+// section 'reviews'
+// @use "../blocks/reviews/reviews.scss";
+// @use "../blocks/reviews-gallery/reviews-gallery.scss";
+// @use "../blocks/reviews-gallery/__overlay/reviews-gallery__overlay.scss";
+// @use "../blocks/reviews-gallery/__image/reviews-gallery__image.scss";
+// @use "../blocks/reviews-gallery/__button/reviews-gallery__button.scss";
+// @use "../blocks/reviews-label/reviews-label.scss";
+// @use "../blocks/reviews-label/__count/reviews-label__count.scss";
+// @use "../blocks/reviews-label/__star/reviews-label__star.scss";
+
+// section 'consultation'
+// @use "../blocks/consultation/consultation.scss";
+// @use "../blocks/consultation-column/consultation-column.scss";
+// @use "../blocks/consultation-column/__container-blur/consultation-column__container-blur.scss";
+// @use "../blocks/consultation-column/__name/consultation-column__name.scss";
+// @use "../blocks/consultation-column/__profile/consultation-column__profile.scss";
+// @use "../blocks/consultation-column/__title/consultation-column__title.scss";
+// @use "../blocks/consultation-column/__subtitle-ps/consultation-column__subtitle-ps.scss";
+// @use "../blocks/consultation-column/__gift/consultation-column__gift.scss";
+// @use "../blocks/consultation-column/__subtitle/consultation-column__subtitle.scss";
+// @use "../blocks/consultation-column/__people/consultation-column__people.scss";
+// @use "../blocks/consultation-column/__container-form/consultation-column__container-form.scss";
+// @use "../blocks/consultation-column/__image-people/consultation-column__image-people.scss";
+// @use "../blocks/consultation-column/__contanier-pictures/consultation-column__contanier-pictures.scss";
+
+// @use "../blocks/form/form.scss";
+// @use "../blocks/form/__input/form__input.scss";
+// @use "../blocks/form/__submit/form__submit.scss";
+
+// @use "../blocks/record-form__input-error/record-form__input-error.scss";
+// @use "../blocks/record-form/__error/_active/record-form__error_active.scss";
+// @use "../blocks/tel-error/_position/tel-error_position.scss";
+
+// секция partners
+// @use "../blocks/partners/partners.scss";
+// @use "../blocks/partners/__title/partners__title.scss";
+// @use "../blocks/partners/__cards-container/partners__cards-container.scss";
+// @use "../blocks/partners/__cards/partners__cards.scss";
+// @use "../blocks/partners/__cards/_part/partners__cards_part_second.scss";
+// @use "../blocks/partners/__card/partners__card.scss";
+// @use "../blocks/partners/__card-image/partners__card-image.scss";
+
+// секция new-solution
+// @use "../blocks/new-solution/new-solution.scss";
+// @use "../blocks/new-solution/__background/new-solution__background.scss";
+// @use "../blocks/new-solution/__container/new-solution__container.scss";
+// @use "../blocks/new-solution/__card/new-solution__card.scss";
+// @use "../blocks/new-solution/__card-title/new-solution__card-title.scss";
+// @use "../blocks/new-solution/__card-image/new-solution__card-image.scss";
+// @use "../blocks/new-solution/__card-video/new-solution__card-video.scss";
+// @use "../blocks/new-solution/__list/new-solution__list.scss";
+// @use "../blocks/new-solution/__list-item/new-solution__list-item.scss";
+// @use "../blocks/new-solution/__list/_two-columns/new-solution__list_two-columns.scss";
+// @use "../blocks/new-solution/__bullet/new-solution__bullet.scss";
+// @use "../blocks/new-solution/__bullet/_tick/new-solution__bullet_tick.scss";
+// @use "../blocks/new-solution/__text/new-solution__text.scss";
+// @use "../blocks/new-solution/__text/_accent/new-solution__text_accent.scss";
+// @use "../blocks/new-solution/__button/new-solution__button.scss";
+
+// секция tariffs
+// @use "../blocks/tariffs/tariffs.scss";
+// @use "../blocks/tariffs/__background/tariffs__background.scss";
+// @use "../blocks/tariffs/__info-container/tariffs__info-container.scss";
+// @use "../blocks/tariffs/__title/tariffs__title.scss";
+// @use "../blocks/tariffs/__text/tariffs__text.scss";
+// @use "../blocks/tariffs/__text/_accent/tariffs__text_accent.scss";
+// @use "../blocks/tariffs/__button/tariffs__button.scss";
+// @use "../blocks/tariffs/__present-container/tariffs__present-container.scss";
+// @use "../blocks/tariffs/__present-box-pitcure/tariffs__present-box-picture.scss";
+// @use "../blocks/tariffs/__present-text/tariffs__present-text.scss";
+// @use "../blocks/tariffs/__cards/tariffs__cards.scss";
+
+// блок tariff-card
+// @use "../blocks/tariff-card/tariff-card.scss";
+// @use "../blocks/tariff-card/_dark/tariff-card_dark.scss";
+// @use "../blocks/tariff-card/__info-container/tariff-card__info-container.scss";
+// @use "../blocks/tariff-card/__first-row-container/tariff-card__first-row-container.scss";
+// @use "../blocks/tariff-card/__title/tariff-card__title.scss";
+// @use "../blocks/tariff-card/__title/_dark/tariff-card__title_dark.scss";
+// @use "../blocks/tariff-card/__subtitle/tariff-card__subtitle.scss";
+// @use "../blocks/tariff-card/__subtitle/_dark/tariff-card__subtitle_dark.scss";
+// @use "../blocks/tariff-card/__discount-label/tariff-card__discount-label.scss";
+// @use "../blocks/tariff-card/__discount-label/_dark/tariff-card__discount-label_dark.scss";
+// @use "../blocks/tariff-card/__options-list/tariff-card__options-list.scss";
+// @use "../blocks/tariff-card/__options-list-item/tariff-card__options-list-item.scss";
+// @use "../blocks/tariff-card/__option-icon/tariff-card__option-icon.scss";
+// @use "../blocks/tariff-card/__option-text/tariff-card__option-text.scss";
+// @use "../blocks/tariff-card/__option-text/_dark/tariff-card__option-text_dark.scss";
+// @use "../blocks/tariff-card/__prices/tariff-card__prices.scss";
+// @use "../blocks/tariff-card/__current-price/tariff-card__current-price.scss";
+// @use "../blocks/tariff-card/__current-price/_dark/tariff-card__current-price_dark.scss";
+// @use "../blocks/tariff-card/__old-price/tariff-card__old-price.scss";
+// @use "../blocks/tariff-card/__old-price/_dark/tariff-card__old-price_dark.scss";
+// @use "../blocks/tariff-card/__top-choice-label/tariff-card__top-choice-label.scss";
+
+// section 'faq'
+// @use "../blocks/faq/faq.scss";
+// @use "../blocks/faq/__container/faq__container.scss";
+// @use "../blocks/faq/__item/faq__item.scss";
+// @use "../blocks/faq/__title/faq__title.scss";
+// @use "../blocks/faq/__header/faq__header.scss";
+// @use "../blocks/faq/__body/faq__body.scss";
+// @use "../blocks/faq/__icon/faq__icon.scss";
+// @use "../blocks/faq/__icon/_opening/faq__icon_opening.scss";
+
+// section 'footer'
+// @use "../blocks/footer/footer.scss";
+// @use "../blocks/footer/__block-left/footer__block-left.scss";
+// @use "../blocks/footer/__information/footer__information.scss";
+// @use "../blocks/footer/__block-center/footer__block-center.scss";
+// @use "../blocks/footer/__container-links-social-network/footer__container-links-social-network.scss";
+// @use "../blocks/footer/__link-social-network/footer__link-social-network.scss";
+// @use "../blocks/footer/__link-image/footer__link-image.scss";
+// @use "../blocks/footer/__container-links-user-agrrement/footer__container-links-user-agrrement.scss";
+// @use "../blocks/footer/__link-user-agrrement/footer__link-user-agrrement.scss";
+// @use "../blocks/footer/__block-right/footer__block-right.scss";
+// @use "../blocks/footer/__client-logo/footer__client-logo.scss";

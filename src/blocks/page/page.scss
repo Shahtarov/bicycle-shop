@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+.page {
+	margin: 0 auto;
+	min-width: 320px;
+	// max-width: 1200px;
+	background-color: $background-color;
+	font-family: $font-family;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

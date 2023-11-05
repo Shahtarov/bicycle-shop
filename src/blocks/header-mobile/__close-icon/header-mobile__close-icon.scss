@@ -1,0 +1,17 @@
+.header-mobile__close-icon {
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	background-image: url('../../../images/close-icon.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+	&:hover {
+		transition: opacity ease-in-out 0.35s;
+		opacity: 0.5;
+		cursor: pointer;
+	}
+}

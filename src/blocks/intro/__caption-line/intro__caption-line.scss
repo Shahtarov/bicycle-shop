@@ -1,0 +1,11 @@
+.intro__caption-line {
+	margin: 0;
+	width: 132px;
+	height: 2px;
+	background-color: #d7d4d4;
+	border: none;
+
+	@media screen and (max-width: 880px) {
+		display: none;
+	}
+}

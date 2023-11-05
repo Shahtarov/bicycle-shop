@@ -1,0 +1,10 @@
+.title_size_big {
+	letter-spacing: -0.5px;
+	width: 100%;
+	font-size: clamp(32px, 8vw, 55px);
+	line-height: clamp(40px, 10vw, 60px);
+
+	@media screen and (max-width: 880px) {
+		width: 85vw;
+	}
+}

@@ -1,0 +1,17 @@
+$font-family: Inter, Arial, sans-serif;
+
+$buttin-color: #24b47e;
+$button-color-hover: #319e75;
+
+$background-color: #f4f4f4;
+$footer-color: #efefef;
+
+$text-color-light: #151515;
+$text-color-grey: rgba(21, 21, 21, 0.7);
+$text-color-dark: #fff;
+
+// $section-margin: clamp(40px, 15vw, 120px) auto 0;
+$section-margin: clamp(40px, 15vw, 120px) clamp(18px, 5vw, 120px) 0
+	clamp(18px, 5vw, 120px);
+$container-padding: clamp(40px, 15vw, 50px) clamp(18px, 5vw, 120px)
+	clamp(25px, 15vw, 60px) clamp(18px, 5vw, 120px);

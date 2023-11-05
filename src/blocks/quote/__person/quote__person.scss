@@ -1,0 +1,5 @@
+.quote__person {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(4px, 3vw, 6px);
+}

@@ -1,0 +1,10 @@
+.workout__description {
+	width: 460px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+
+	@media screen and (max-width: 880px) {
+		width: 100%;
+	}
+}
